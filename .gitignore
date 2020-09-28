@@ -1,0 +1,11 @@
+Chapter5/Microservices.CountryCapital/.vs/
+Chapter5/Microservices.CountryCapital/LambdaLayer/bin/
+Chapter5/Microservices.CountryCapital/LambdaLayer/obj/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.API/bin/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.API/obj/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Domain/bin/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Domain/obj/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Infrastructure/bin/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Infrastructure/obj/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Services/bin/
+Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Services/obj/
