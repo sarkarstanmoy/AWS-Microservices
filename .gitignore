@@ -9,3 +9,6 @@ Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Infrastructur
 Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Infrastructure/obj/
 Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Services/bin/
 Chapter5/Microservices.CountryCapital/Microservices.CountryCapital.Services/obj/
+Chapter7/StepFunctions/OrderProcessor/.vs/
+Chapter7/StepFunctions/OrderProcessor/OrderProcessor/bin/
+Chapter7/StepFunctions/OrderProcessor/OrderProcessor/obj/
