@@ -22,6 +22,8 @@ namespace OrderProcessor
         /// <summary>
         /// The number of seconds to wait between calling the Salutations task and Greeting task.
         /// </summary>
-        public int WaitInSeconds { get; set; } 
+        public int WaitInSeconds { get; set; }
+
+        public string OrderId { get; set; }
     }
 }

@@ -22,34 +22,21 @@ namespace OrderProcessor
         }
 
 
-        public State ProcessOrder(State state, ILambdaContext context)
+        public State ProcessOrder(OrderEvent order, ILambdaContext context)
         {
-            state.Message = "OrderProcessing Started";
-
-            if(!string.IsNullOrEmpty(state.Name))
+            Console.WriteLine("OrderProcessing Started");
+            Console.Write(Newtonsoft.Json.JsonConvert.SerializeObject(order));
+            return new State()
             {
-                state.Message += " " + state.Name;
-            }
-
-            // Tell Step Function to wait 5 seconds before calling 
-            state.WaitInSeconds = 5;
-            state.Message = "OrderProcessing Completed";
-            Console.Write("OrderProcessing Completed Successfully");
-            return state;
+                OrderId=order.detail.orderId,
+                Message="Process Order completed successfully"
+            };
         }
 
         public State ProcessPayment(State state, ILambdaContext context)
         {
-            state.Message = "PaymentProcessing Started";
-
-            if (!string.IsNullOrEmpty(state.Name))
-            {
-                state.Message += " " + state.Name;
-            }
-
-            // Tell Step Function to wait 5 seconds before calling 
-            state.WaitInSeconds = 5;
-
+            Console.WriteLine("PaymentProcessing Started");
+            Console.Write(Newtonsoft.Json.JsonConvert.SerializeObject(state));
             state.Message = "PaymentProcessing Completed";
             Console.Write("PaymentProcessing Completed Successfully");
 
@@ -58,14 +45,7 @@ namespace OrderProcessor
 
         public State ProcessEmail(State state, ILambdaContext context)
         {
-            state.Message = "EmailProcessing Started";
-
-            if (!string.IsNullOrEmpty(state.Name))
-            {
-                state.Message += " " + state.Name;
-            }
-
-
+            Console.WriteLine("EmailProcessing Started");
             Console.Write("EmailProcessing Completed Successfully");
 
             return state;
