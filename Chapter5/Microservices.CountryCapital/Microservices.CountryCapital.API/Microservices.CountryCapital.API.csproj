@@ -13,4 +13,9 @@
     <ProjectReference Include="..\Microservices.CountryCapital.Infrastructure\Microservices.CountryCapital.Infrastructure.csproj" />
     <ProjectReference Include="..\Microservices.CountryCapital.Services\Microservices.CountryCapital.Services.csproj" />
   </ItemGroup>
+  <ItemGroup>
+    <None Update="serverless.template">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 </Project>
