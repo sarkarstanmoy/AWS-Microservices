@@ -16,7 +16,7 @@ Resources:
     Properties:
       Handler: Microservices.CountryCapital.API::Microservices.CountryCapital.API.LambdaEntryPoint::FunctionHandlerAsync
       FunctionName: CountryCapitalServerlessApi
-      Runtime: dotnetcore2.1
+      Runtime: dotnetcore3.1
       CodeUri: s3://countrycapital/f4e21484860c49a953d3a6844c61c143
       Description: CountryCapital API
       MemorySize: 256
